@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>berry_to_elfin</name>
+  <version>0.0.1</version>
+  <description>Bridge YOLO xyz -> Elfin MoveIt</description>
+
+  <maintainer email="you@example.com">Francisco</maintainer>
+  <license>MIT</license>
+
+  <buildtool_depend>ament_cmake</buildtool_depend>
+  <buildtool_depend>ament_python</buildtool_depend>
+
+  <exec_depend>rclpy</exec_depend>
+  <exec_depend>std_msgs</exec_depend>
+  <exec_depend>geometry_msgs</exec_depend>
+  <exec_depend>tf2_ros</exec_depend>
+  <exec_depend>tf2_geometry_msgs</exec_depend>
+  <exec_depend>launch</exec_depend>
+  <exec_depend>launch_ros</exec_depend>
+
+  <!-- para ros2 run elfin_moveit_app elfin_moveit_app -->
+  <exec_depend>elfin_moveit_app</exec_depend>
+
+  <export>
+    <build_type>ament_python</build_type>
+  </export>
+</package>
